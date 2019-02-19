@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/portal">
+ 
+<Resource driverClassName="oracle.jdbc.driver.OracleDriver" maxActive="20" maxIdle="10" 
+ maxWait="5000" name="jdbc/portal" password="" type="javax.sql.DataSource" 
+ url="jdbc:oracle:thin:@localhost:1521:portal" username="" 
+/>
+ 
+</Context>
