@@ -28,7 +28,7 @@ public class AppController {
 		return ResponseEntity.ok().body(persons);
 	}
 
-	@GetMapping(value = { "/delete?{id}" }) 
+	@GetMapping(value = { "/delete-{id}" }) 
 	public ResponseEntity<List<Person>> deleteEmployee(@PathVariable String id) {
 		service.deletePerson(id);
 		List<Person> persons = service.findAllPersons();
