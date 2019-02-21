@@ -25,4 +25,12 @@ export class DashboardComponent implements OnInit {
             console.log(error);
         });
     }
+
+     deletePerson(id): void {
+        this.dashboardService.deletePerson(id).
+        subscribe((personData) => {this.persons = personData, console.log(personData); },
+         (error) => {
+            console.log(error);
+        });
+    }
 }

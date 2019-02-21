@@ -1,3 +1,24 @@
-<p>
-  dashboard works!
-</p>
+<div>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Country</th>
+        <th></th>
+    </tr>
+    <tr *ngFor = "let person of persons">
+    <td>
+     {{person.id}}
+    </td>
+    <td>
+     {{person.name}}
+    </td>
+    <td>
+     {{person.country}}
+    </td>
+    <td>
+        <button id="dlt" (click)='deletePerson(person.id)'>Delete</button>
+    </td>
+</tr>
+</table>
+</div>

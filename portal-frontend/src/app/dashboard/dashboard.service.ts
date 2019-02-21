@@ -15,6 +15,12 @@ export class DashboardService {
           );
     }
 
+    deletePerson(id): Observable<Person[]> {
+          return this.http.get<Person[]>('http://localhost:8081/portal/delete-' + id).pipe(
+          catchError(this.handleError)
+          );
+    }
+
     private handleError(error: Response) {
         return Observable.throw(error);
     }
