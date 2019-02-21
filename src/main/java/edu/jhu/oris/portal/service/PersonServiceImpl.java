@@ -25,4 +25,8 @@ public class PersonServiceImpl implements PersonService{
 		 dao.deletePersonById(id);
 	}
 
+	public void savePerson(Person person) {
+		dao.savePerson(person);
+	}
+
 }

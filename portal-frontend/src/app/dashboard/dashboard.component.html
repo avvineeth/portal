@@ -1,4 +1,16 @@
 <div>
+<table>
+    <tr>
+    <td>Id :</td>
+    <td><input type="text" [(ngModel)] ="person.id"></td>
+    <td>Name :</td>
+    <td><input type="text" [(ngModel)] ="person.name"></td>
+    <td>Country :</td>
+    <td><input type="text" [(ngModel)] ="person.country"></td>
+    <td><button id="add" (click)='savePerson(person)'>ADD</button></td>
+    </tr>
+</table>
+
 <table border="1">
     <tr>
         <th>ID</th>

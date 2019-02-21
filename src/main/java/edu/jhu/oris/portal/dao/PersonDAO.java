@@ -9,5 +9,7 @@ public interface PersonDAO {
     List<Person> findAllPersons();
     
     public void deletePersonById(String id);
+    
+    public void savePerson(Person person);
 
 }

@@ -21,6 +21,12 @@ export class DashboardService {
           );
     }
 
+    savePerson(person): Observable<Person[]> {
+          return this.http.post<Person[]>('http://localhost:8081/portal/savePerson', person).pipe(
+          catchError(this.handleError)
+          );
+    }
+
     private handleError(error: Response) {
         return Observable.throw(error);
     }

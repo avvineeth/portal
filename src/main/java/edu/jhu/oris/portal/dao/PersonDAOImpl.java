@@ -22,5 +22,11 @@ public class PersonDAOImpl extends AbstractDAO<Integer, Person> implements Perso
         query.executeUpdate();
 	}
 
+	public void savePerson(Person person) {
+		getSession().save(person);
+	}
+	
+	
+
 
 }
