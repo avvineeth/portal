@@ -45,7 +45,6 @@ public class PersonDAOImpl extends AbstractDAO<Integer, Person> implements Perso
 	}
 
 	public void savePerson(Person person) {
-		getPersonList();
 		getSession().save(person);
 	}
 	
